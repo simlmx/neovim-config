@@ -11,3 +11,11 @@ vim.o.tabstop = 4
 vim.o.expandtab = true
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
+
+vim.o.wildmode="list:longest"
+vim.o.wrap = true
+
+vim.o.scrolloff=10
+
+-- vertical lines
+vim.o.colorcolumn = "72,80,120"
