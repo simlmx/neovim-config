@@ -2,6 +2,7 @@ return {
   "saghen/blink.cmp",
   opts = {
     keymap = {
+      preset = "super-tab",
       ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
       ["<C-e>"] = { "hide", "fallback" },
 
@@ -27,7 +28,6 @@ return {
       ["<C-f>"] = { "scroll_documentation_down", "fallback" },
 
       ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
-      -- your changes here according to blink's docs
     },
   },
 }
