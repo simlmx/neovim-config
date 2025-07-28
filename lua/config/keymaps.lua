@@ -5,3 +5,4 @@
 local map = vim.keymap.set
 
 map("i", "jk", "<esc>:w<cr>", { desc = "Save + To Normal Mode" })
+map('n', 'G', 'Gzz')
