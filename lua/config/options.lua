@@ -20,3 +20,5 @@ vim.o.colorcolumn = "72,80,120"
 
 -- Disable clipboard integration - I like to keep my system clipboard separate!
 vim.opt.clipboard = vim.empty_dict()
+
+vim.g.root_spec = { ".git" }
