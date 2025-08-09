@@ -7,6 +7,7 @@ return {
         typescript = { "prettier", lsp_format = "first" },
         typescriptreact = { "prettier", lsp_format = "first" },
         toml = { "tombi" },
+        css = { "prettier" },
       },
     },
   },
