@@ -11,7 +11,7 @@ return {
       -- My old keymaps
       vim.keymap.set("n", "\\m", "<Plug>MarkSet", { desc = "Toggle mark", silent = true })
       vim.keymap.set("n", "\\e", "<Plug>MarkSearchCurrentNext", { desc = "Next mark", silent = true })
-      vim.keymap.set("n", "\\w", "<Plug>MarkSearchCurrentPrev", { desc = "Previous mark", silent = false })
+      vim.keymap.set("n", "\\w", "<Plug>MarkSearchCurrentPrev", { desc = "Previous mark", silent = true })
     end,
   },
 }
