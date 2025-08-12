@@ -5,4 +5,19 @@
 local map = vim.keymap.set
 
 map("i", "jk", "<esc>:w<cr>", { desc = "Save + To Normal Mode" })
-map('n', 'G', 'Gzz')
+map("n", "G", "Gzz")
+
+map("n", "cp", function()
+  local current_word = vim.fn.expand("<cword>")
+  local new_word
+
+  if current_word:sub(1, 1) == "_" then
+    -- Remove leading underscore
+    new_word = current_word:sub(2)
+  else
+    -- Add leading underscore
+    new_word = "_" .. current_word
+  end
+
+  vim.lsp.buf.rename(new_word)
+end, { desc = "Toggle public/private (leading underscore)" })
