@@ -23,3 +23,9 @@ vim.o.colorcolumn = "72,80,120"
 vim.opt.clipboard = vim.empty_dict()
 
 vim.g.root_spec = { ".git" }
+
+vim.opt.listchars = {
+  tab = "  ",
+  trail = "·",
+  nbsp = "␣",
+}
