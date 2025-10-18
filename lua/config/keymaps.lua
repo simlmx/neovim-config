@@ -21,3 +21,9 @@ map("n", "cp", function()
 
   vim.lsp.buf.rename(new_word)
 end, { desc = "Toggle public/private (leading underscore)" })
+
+-- remove LazyVim's remaps for j/k
+vim.keymap.del("n", "j")
+vim.keymap.del("n", "k")
+vim.keymap.del("v", "j")
+vim.keymap.del("v", "k")
