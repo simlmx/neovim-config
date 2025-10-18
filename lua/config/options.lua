@@ -3,6 +3,8 @@
 -- Add any additional options here
 
 vim.g.snacks_animate = false
+vim.g.snacks_scroll = false
+
 vim.g.autoformat = false
 vim.o.conceallevel = 0
 
