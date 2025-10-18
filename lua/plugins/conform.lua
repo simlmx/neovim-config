@@ -8,6 +8,7 @@ return {
         typescriptreact = { "prettier", lsp_format = "first" },
         toml = { "tombi" },
         css = { "prettier" },
+        json = { "prettier" },
       },
     },
   },
