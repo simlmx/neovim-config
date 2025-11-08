@@ -27,3 +27,6 @@ vim.keymap.del("n", "j")
 vim.keymap.del("n", "k")
 vim.keymap.del("v", "j")
 vim.keymap.del("v", "k")
+
+-- Make search git files the default.
+map("n", "<leader><leader>", Snacks.picker.git_files, { desc = "Git files" })
